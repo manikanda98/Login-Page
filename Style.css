@@ -1,0 +1,156 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+   
+}
+.nav{
+    display:flex;
+    flex-direction: row;
+    color: white;
+    height: 10vh;
+    position: sticky;
+    justify-content: space-between;
+    background-color: black;   
+    align-items: center;
+    margin-left: 50%;
+    box-shadow: 10px 5px 50px black;
+    border-bottom-left-radius: 15px;
+}
+.container{
+    padding: 25px;
+    display: block;
+    background-color:white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 10px 5px 10px rgba(35, 35, 35, 0.635);
+    border-radius: 15px;
+    transition-duration: 700ms;
+}
+.container:hover{              
+    padding: 50px;
+}
+.container form .data{                          /*  form inputs*/
+    margin: 10px;
+    width: 300px;
+    /* background-color: red; */
+}
+#clock{                                         /*  clock*/
+
+    margin: 10px;
+    font-size: xx-large;
+    text-shadow: 2px 5px 10px red;
+    position: absolute;
+    right: 10px;
+   font-family: cursive;
+
+}                                                 /*  creator*/
+.creator{      
+    color: rgba(0, 0, 0, 0.87);                                             
+    font-size: large;
+    text-shadow: 2px 5px 10px red;
+    position: relative;
+    font-family: cursive;
+    /* top: 900%; */
+    right:40%;
+}
+.creator:hover{    /*  creator*/
+
+    text-shadow: 2px 5px 10px red;                               
+   letter-spacing: 1px;
+    color:white;
+    cursor: pointer;
+    transition: 1000ms;
+   
+}
+.container form .data input{
+    padding: 10px;
+    height: 35px;
+    width: 100%;
+    border-radius: 50px;
+    border-color: silver;   
+}
+.container form .data input:focus{
+   border-bottom-color:aqua;
+}
+.container .title{
+    text-align: center;
+     color: aqua;
+     font-size:xx-large;
+     cursor: pointer;
+}
+.container form .data label{
+     text-align: center;
+     color: aqua;
+     font-size:xx-large;
+     cursor: pointer;    
+}
+.container .signup{
+    color: aqua;
+}
+.container .btn{
+    margin: 10px;
+    transform: translate(30%,50%);
+
+}
+.container .btn button{
+   height: 40;
+   width: 90px; 
+   border-radius: 20px;
+   color: aqua;
+   text-transform:uppercase;
+   font-size: x-large;
+}
+.container .btn button:hover{
+  background-color:grey;
+  
+ }
+ .nav .logo{
+    position: relative;
+    left: 20px;
+    height: 30px;
+    width:  30px;
+    border: 3px solid;
+    border-radius: 100%;
+    border-color: rgba(0, 0,0,1);
+    border-top-color:white;
+    background-color:black;
+    animation-name: spin;
+    animation-duration: 50ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+
+ }
+ @keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+ }
+ .designer{
+    font-size: x-large;
+    text-shadow: 2px 5px 10px red;
+    position: absolute;
+    right: 10px;
+    font-family: cursive;
+ }
+ .designer:hover{    /*  creator*/
+
+    text-shadow: 2px 5px 10px red;                               
+    letter-spacing: 1px;
+    color:white;
+    cursor: pointer;
+    transition: 1000ms;
+   
+}
